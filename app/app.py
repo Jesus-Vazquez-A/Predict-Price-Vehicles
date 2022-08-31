@@ -7,7 +7,7 @@
 
 
 import streamlit as st
-import xgboost as xgb
+from xgboost import XGBRegressor
 import numpy as np
 import json
 from PIL import Image
@@ -150,7 +150,7 @@ def preprocess():
 st.cache(allow_output_mutation=True)
 
 def predict(new_data):
-    model = xgb.XGBRegressor()
+    model = XGBRegressor()
     model.load_model("xgb_car_price.json")
     return np.round(model.predict(new_data)).astype(int)
 
