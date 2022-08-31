@@ -1,3 +1,3 @@
 xgboost == 0.90
-sklearn == 0.42.1
+scikit-learn == 0.42.1
 numpy == 1.22.4
