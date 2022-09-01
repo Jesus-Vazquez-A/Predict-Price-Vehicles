@@ -43,7 +43,7 @@ We opted to create several subsets according to the vehicle manufacturer with th
 
 
 We create an upper range for the MPG variable. To find a more exact interval. We decided to calculate it according to the fuel type of the vehicle.
+It makes sense that hybrid vehicles have an MPG. Since they rely on their electric motors.We take the largest interval to select all those values that are less than that amount.
 
 
-It makes sense that hybrid vehicles have an MPG. Since they rely on their electric motors.
 
