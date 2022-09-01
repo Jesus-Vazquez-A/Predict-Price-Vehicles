@@ -36,7 +36,9 @@ As can be seen from brands such as Mercedes-Benz, Audi and BMW. They have a high
 There are vehicle models that are repeated less than 10 times. Therefore, it is better to choose to eliminate them, since they can affect the performance of the model. Since these observations appear very little.
 
 
+
 We opted to create several subsets according to the vehicle manufacturer with the purpose of giving a better cleaning to the data, for the price variable. Since it is the variable to estimate.
+
 
 
 ![mpg](https://user-images.githubusercontent.com/85312561/187809290-6a363bdd-e9c4-41ed-98c0-5d7669950e30.png)
@@ -44,6 +46,8 @@ We opted to create several subsets according to the vehicle manufacturer with th
 
 We create an upper range for the MPG variable. To find a more exact interval. We decided to calculate it according to the fuel type of the vehicle.
 It makes sense that hybrid vehicles have an MPG. Since they rely on their electric motors.We take the largest interval to select all those values that are less than that amount.
+
+
 
 ## *Data Processing*
 
@@ -56,7 +60,10 @@ As results we reach a number of 119 input variables. In addition to having aroun
 
 ## *XGBoost*
 
-It is an algorithm that uses other simpler models, generally decision trees. Each tree becomes better according to the proportion of the user's learning rate. A low learning rate allows the greatest use of estimators. In addition to preventing the model from overfitting training data.It has the additional advantage that the model can be trained using a GPU, accelerating the training speed.
+
+It is an algorithm that uses other simpler models, generally decision trees. Each tree becomes better according to the proportion of the user's learning rate. A low learning rate allows the greatest use of estimators. 
+
+In addition to preventing the model from overfitting training data.It has the additional advantage that the model can be trained using a GPU, accelerating the training speed.
 
 
 
@@ -69,11 +76,16 @@ It is an algorithm that uses other simpler models, generally decision trees. Eac
 
 ### *Number of Ideal Estimators*
 
-We use the mean square error, which measures the average error between the original value and the predicted one. We evaluate the MSE according to the number of estimators, taking care that the loss function does not only decrease for the training data.Each model proposal is assigned a learning rate of 0.01. In order for the model to generalize better.
+We use the mean square error, which measures the average error between the original value and the predicted one.
+
+We evaluate the MSE according to the number of estimators, taking care that the loss function does not only decrease for the training data.Each model proposal is assigned a learning rate of 0.01. In order for the model to generalize better.
 
 ![estimators_plot](https://user-images.githubusercontent.com/85312561/187816326-687aa2ce-8adc-423b-a8c4-d3590b2be2b7.png)
 
-Because this last model we assign fewer estimators, because we provide a depth of each tree we use a range of 100 to 500 trees. The training and testing MSE almost go hand in hand. Therefore we can use the maximum amount that we assign to this model. Later we use a function called GridSearchCV that consists of searching for the best combination of parameters based on cross validation. We add the subassembly parameter to the equation where we assign 3 values: [0.80,0.85,0.9].
+
+Because this last model we assign fewer estimators, because we provide a depth of each tree we use a range of 100 to 500 trees. The training and testing MSE almost go hand in hand. Therefore we can use the maximum amount that we assign to this model.
+
+Later we use a function called GridSearchCV that consists of searching for the best combination of parameters based on cross validation. We add the subassembly parameter to the equation where we assign 3 values: [0.80,0.85,0.9].
 
 
 As a final model of the following combination of parameters:
