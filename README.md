@@ -22,3 +22,7 @@ As can be seen from brands such as Mercedes-Benz, Audi and BMW. They have a high
 
 ![matrix plot](https://user-images.githubusercontent.com/85312561/187807773-39d1df0b-e2a0-408f-b1f2-f186d695380e.png)
 
+
+* Generally between the model is more recent, the price will increase. Since the vehicles are improved over time.
+* The more miles the vehicle travels, the price decreases, since the model wears out. As long as it is the same model.
+* The engine size positively influences the price of the vehicle. Since the technical section of the vehicles increases.
