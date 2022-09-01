@@ -45,5 +45,9 @@ We opted to create several subsets according to the vehicle manufacturer with th
 We create an upper range for the MPG variable. To find a more exact interval. We decided to calculate it according to the fuel type of the vehicle.
 It makes sense that hybrid vehicles have an MPG. Since they rely on their electric motors.We take the largest interval to select all those values that are less than that amount.
 
+## *Data Processing*
 
+<img src = "https://www.statology.org/wp-content/uploads/2021/09/oneHot1.png">
+
+Nominal character variables, such as the model or the manufacturer, require a transformation called One Hot Encoding.
 
