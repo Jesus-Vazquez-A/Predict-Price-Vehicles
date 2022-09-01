@@ -69,9 +69,17 @@ It is an algorithm that uses other simpler models, generally decision trees. Eac
 
 ### *Number of Ideal Estimators*
 
-We use the mean square error, which measures the average error between the original value and the predicted one. We evaluate the MSE according to the number of estimators, taking care that the loss function does not only decrease for the training data.
+We use the mean square error, which measures the average error between the original value and the predicted one. We evaluate the MSE according to the number of estimators, taking care that the loss function does not only decrease for the training data.Each model proposal is assigned a learning rate of 0.01. In order for the model to generalize better.
 
 ![estimators_plot](https://user-images.githubusercontent.com/85312561/187816326-687aa2ce-8adc-423b-a8c4-d3590b2be2b7.png)
 
-Because this last model we assign fewer estimators, because we provide a depth of each tree we use a range of 100 to 500 trees. The training and testing MSE almost go hand in hand. Therefore we can use the maximum amount that we assign to this model.
+Because this last model we assign fewer estimators, because we provide a depth of each tree we use a range of 100 to 500 trees. The training and testing MSE almost go hand in hand. Therefore we can use the maximum amount that we assign to this model. Later we use a function called GridSearchCV that consists of searching for the best combination of parameters based on cross validation. We add the subassembly parameter to the equation where we assign 3 values: [0.80,0.85,0.9].
+
+
+As a final model of the following combination of parameters:
+
+* max_depth = 8
+* learning_rate = 0.01
+* n_estimators = 500
+* subsample = 0.85
 
