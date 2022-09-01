@@ -73,5 +73,5 @@ We use the mean square error, which measures the average error between the origi
 
 ![estimators_plot](https://user-images.githubusercontent.com/85312561/187816326-687aa2ce-8adc-423b-a8c4-d3590b2be2b7.png)
 
-Because this last model we assign fewer estimators, because we provide a depth of each tree.
+Because this last model we assign fewer estimators, because we provide a depth of each tree we use a range of 100 to 500 trees. The training and testing MSE almost go hand in hand. Therefore we can use the maximum amount that we assign to this model.
 
