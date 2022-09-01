@@ -73,5 +73,5 @@ We use the mean square error, which measures the average error between the origi
 
 ![estimators_plot](https://user-images.githubusercontent.com/85312561/187816326-687aa2ce-8adc-423b-a8c4-d3590b2be2b7.png)
 
-
+Because this last model we assign fewer estimators, because we provide a depth of each tree.
 
