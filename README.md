@@ -49,5 +49,5 @@ It makes sense that hybrid vehicles have an MPG. Since they rely on their electr
 
 <img src = "https://www.statology.org/wp-content/uploads/2021/09/oneHot1.png">
 
-Nominal character variables, such as the model or the manufacturer, require a transformation called One Hot Encoding.
+Nominal character variables, such as the model or the manufacturer, require a transformation called One Hot Encoding. Several dummy variables are created according to the number of these. Where the condition is met, a 1 will be assigned, while the other columns will be filled with a 0.
 
