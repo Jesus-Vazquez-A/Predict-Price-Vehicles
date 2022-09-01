@@ -47,12 +47,26 @@ It makes sense that hybrid vehicles have an MPG. Since they rely on their electr
 
 ## *Data Processing*
 
-<img src = "https://www.statology.org/wp-content/uploads/2021/09/oneHot1.png">
 
 Nominal character variables, such as the model or the manufacturer, require a transformation called One Hot Encoding. Several dummy variables are created according to the number of these. Where the condition is met, a 1 will be assigned, while the other columns will be filled with a 0.
 
 
 As results we reach a number of 119 input variables. In addition to having around 50,000 observations. Which the best model that meets these characteristics is the XGBoost. Instead of using a neural network, since using it requires more data sets. XGBoost does not require any kind of scaling, since it applies mathematical inequalities on each estimator.
+
+
+## *XGBoost*
+
+It is an algorithm that uses other simpler models, generally decision trees. Each tree becomes better according to the proportion of the user's learning rate. A low learning rate allows the greatest use of estimators. In addition to preventing the model from overfitting training data.It has the additional advantage that the model can be trained using a GPU, accelerating the training speed.
+
+
+#### *Common Parameters*
+* max_depth: Maximum depth of each tree.
+* n_estimators: Number of decision trees.
+* learning_rate: Room for improvement of each estimator.
+* subsample: Number of training samples. Instead of selecting 100% of the data, you can use 80 or 85% of the data. Preventing the model from overfitting the training data
+
+### *Number of Ideal Estimators*
+
 
 
 
