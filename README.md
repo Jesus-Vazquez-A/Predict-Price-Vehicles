@@ -58,7 +58,7 @@ As results we reach a number of 119 input variables. In addition to having aroun
 
 It is an algorithm that uses other simpler models, generally decision trees. Each tree becomes better according to the proportion of the user's learning rate. A low learning rate allows the greatest use of estimators. In addition to preventing the model from overfitting training data.It has the additional advantage that the model can be trained using a GPU, accelerating the training speed.
 
-![estimators_plot](https://user-images.githubusercontent.com/85312561/187816326-687aa2ce-8adc-423b-a8c4-d3590b2be2b7.png)
+
 
 
 #### *Common Parameters*
@@ -71,7 +71,7 @@ It is an algorithm that uses other simpler models, generally decision trees. Eac
 
 We use the mean square error, which measures the average error between the original value and the predicted one. We evaluate the MSE according to the number of estimators, taking care that the loss function does not only decrease for the training data.
 
-
+![estimators_plot](https://user-images.githubusercontent.com/85312561/187816326-687aa2ce-8adc-423b-a8c4-d3590b2be2b7.png)
 
 
 
