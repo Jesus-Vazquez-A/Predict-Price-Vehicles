@@ -92,9 +92,7 @@ We evaluate the MSE according to the number of estimators, taking care that the 
 ![estimators_plot](https://user-images.githubusercontent.com/85312561/187816326-687aa2ce-8adc-423b-a8c4-d3590b2be2b7.png)
 
 
-Because this last model we assign fewer estimators, because we provide a depth of each tree we use a range of 100 to 500 trees. The training and testing MSE almost go hand in hand. Therefore we can use the maximum amount that we assign to this model.
-
-Later we use a function called GridSearchCV that consists of searching for the best combination of parameters based on cross validation. We add the subassembly parameter to the equation where we assign 3 values: [0.80,0.85,0.9].
+We use 100 to 1000 estimators to find the optimal number of trees. According to the maximum depth of the tree, in this way we ensure that the model does not overfit.
 
 
 As a final model of the following combination of parameters:
