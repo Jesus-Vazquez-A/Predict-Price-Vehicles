@@ -97,5 +97,6 @@ As a final model of the following combination of parameters:
 
 ### *Feature Importance*
 
-![plot_importance](https://user-images.githubusercontent.com/85312561/187984018-e5ba61c2-a9b7-409b-a864-19da2e1cc40d.jpeg)
 
+
+![plot_importance](https://user-images.githubusercontent.com/85312561/188053598-d9e75b84-7e25-4ce4-8929-8f80722e0c9b.jpeg)
