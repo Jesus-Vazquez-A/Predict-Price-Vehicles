@@ -1,5 +1,7 @@
 # About Problem
 
+<img "https://previews.123rf.com/images/artisticco/artisticco1403/artisticco140300085/26934105-una-ilustraci%C3%B3n-vectorial-de-vendedor-de-coches-dando-la-clave-del-nuevo-coche-al-cliente-en-el-conc.jpg">
+
 We collected 6 sets of data from the Kaggle platform on the price of pre-owned or used vehicles. The vehicle manufacturers we collected were the following: Ford,Hyundai,Toyota,Audu,BMW and Mercedez-Benz
 
 ## *Features Dataset*
@@ -61,6 +63,8 @@ As results we reach a number of 119 input variables. In addition to having aroun
 ## *XGBoost*
 
 
+
+
 It is an algorithm that uses other simpler models, generally decision trees. Each tree becomes better according to the proportion of the user's learning rate. A low learning rate allows the greatest use of estimators. 
 
 In addition to preventing the model from overfitting training data.It has the additional advantage that the model can be trained using a GPU, accelerating the training speed.
@@ -90,10 +94,11 @@ Later we use a function called GridSearchCV that consists of searching for the b
 
 As a final model of the following combination of parameters:
 
-* max_depth = 8
+* max_depth = 7
 * learning_rate = 0.01
-* n_estimators = 500
+* n_estimators = 1000
 * subsample = 0.85
+* gamma = 10
 
 ### *Feature Importance*
 
@@ -109,7 +114,7 @@ The engine size is a variable that has a lot of weight. Since the greater the ca
 * The MPG in some countries is the main producer, for the purchase of a vehicle. Since there will be people looking for an economical car in terms of fuel consumption.
 
 
-*The year of manufacture includes in the price, since if a vehicle of the same model. It will make the price of the car more expensive, since it will be a more recent model.
+* The year of manufacture includes in the price, since if a vehicle of the same model. It will make the price of the car more expensive, since it will be a more recent model.
 
 These are the variables that most influence the model. The other variables can help complement the result.
 
