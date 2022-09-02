@@ -10,9 +10,14 @@ We collected 6 sets of data from the Kaggle platform on the price of pre-owned o
 * Model: Vehicle model.
 * Year: Model year of manufacture.
 * Mileage : Number of miles traveled by the vehicle.
-* EngineSize: Car's Engine Size
+* EngineSize: Car's Engine Size.
 * Tax: Amount of tax per vehicle.
-* MPG: Fuel cost miles per gallon
+* MPG: Fuel cost miles per gallon.
+
+
+## *What is the price of the vehicle?*
+
+Develop a predictive model that allows estimating the price of brand vehicles: Ford, Toyota, Hyundai, BMW, Audi and Mercedes-Benz.Based on the variables explained above.
 
 
 ## *Important Discoveries*
