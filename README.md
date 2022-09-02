@@ -94,6 +94,9 @@ We evaluate the MSE according to the number of estimators, taking care that the 
 
 We use 100 to 1000 estimators to find the optimal number of trees. According to the maximum depth of the tree, in this way we ensure that the model does not overfit.
 
+### *GridSearchCV*
+
+We rely on the GridSearchCV function that searches for the best combination of parameters according to cross validation. Thanks to this tool we ensure that the model generalizes well.
 
 As a final model of the following combination of parameters:
 
