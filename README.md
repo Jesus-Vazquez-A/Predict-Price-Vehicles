@@ -67,7 +67,7 @@ As results we reach a number of 119 input variables. In addition to having aroun
 
 ## *XGBoost*
 
-
+<img src = "https://miro.medium.com/max/560/1*85QHtH-49U7ozPpmA5cAaw.png">
 
 
 It is an algorithm that uses other simpler models, generally decision trees. Each tree becomes better according to the proportion of the user's learning rate. A low learning rate allows the greatest use of estimators. 
