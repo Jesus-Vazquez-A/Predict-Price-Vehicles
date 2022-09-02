@@ -126,6 +126,18 @@ These are the variables that most influence the model. The other variables can h
 For example, in this list of the most important variables, the mileage variable does not appear. It is well known that generally a vehicle with more mileage tends to lower the price.
 
 
-## **Production**
+## *Production*
 
-Finally, it further develops a practical graphical interface, which allows users to enter new data in a pleasant way. Later, using Streamlit Cloud, we send it to a free server, which allows users to use it.
+Finally, it further develops a practical graphical interface, which allows users to enter new data in a pleasant way. Later, using Streamlit Cloud, we send it to a free server, which allows users to use it.Streamlit is a library that allows you to easily create web applications that deal with working with data.
+
+
+
+# **Summary*
+
+
+We develop all the processes that require a data science project. We clean the data in order to improve the performance of our model.
+
+We opted to use XGBoost as this algorithm works quite well for moderate data sets. In addition, continuous variables do not require any type of preprocessing and as if that were not enough, it allows training through GPU. This translates to much more efficient training than we would with a CPU.
+
+
+The created model is used to predict new values, to verify its performance. Since I was sure of its performance, I developed an application for the Artificial Intelligence model. With elin that users can enter data in a better way.
