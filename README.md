@@ -132,7 +132,7 @@ Finally, it further develops a practical graphical interface, which allows users
 
 
 
-# **Summary*
+# *Summary*
 
 
 We develop all the processes that require a data science project. We clean the data in order to improve the performance of our model.
