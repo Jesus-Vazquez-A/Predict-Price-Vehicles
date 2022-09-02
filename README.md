@@ -124,3 +124,8 @@ The engine size is a variable that has a lot of weight. Since the greater the ca
 These are the variables that most influence the model. The other variables can help complement the result.
 
 For example, in this list of the most important variables, the mileage variable does not appear. It is well known that generally a vehicle with more mileage tends to lower the price.
+
+
+## **Production**
+
+Finally, it further develops a practical graphical interface, which allows users to enter new data in a pleasant way. Later, using Streamlit Cloud, we send it to a free server, which allows users to use it.
