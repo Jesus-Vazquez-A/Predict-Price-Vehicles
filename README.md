@@ -50,7 +50,7 @@ The dataset has several outliers for example with the following variables:
 
 ## Data cleaning
 
-![unique_values](https://user-images.githubusercontent.com/85312561/187808831-3c54e23e-398b-4c15-8d00-c1b76ad96871.png)
+
 
 There are vehicle models that are repeated less than 10 times. Therefore, it is better to choose to eliminate them, since they can affect the performance of the model. Since these observations appear very little.
 
@@ -59,7 +59,16 @@ There are vehicle models that are repeated less than 10 times. Therefore, it is 
 We opted to create several subsets according to the vehicle manufacturer with the purpose of giving a better cleaning to the data, for the price variable. Since it is the variable to estimate.
 
 
+![unique_values](https://user-images.githubusercontent.com/85312561/187808831-3c54e23e-398b-4c15-8d00-c1b76ad96871.png)
 
+
+
+![mileage](https://user-images.githubusercontent.com/85312561/190246548-cd8f83fa-215b-4106-8943-48e3f46490a6.jpeg)
+
+
+We create a custom model that allows me to calculate confidence intervals, in order to remove outliers.
+
+We perform a similar process for the price variable, with the difference that it uses manufacturer-based intervals, since the dataset contains high-end car manufacturers.
 
 
 
