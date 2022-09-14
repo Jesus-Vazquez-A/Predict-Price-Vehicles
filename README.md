@@ -169,7 +169,7 @@ The engine size is a variable that has a lot of weight. Since the greater the ca
 
 ## *Production*
 
-Finally, it further develops a practical graphical interface, which allows users to enter new data in a pleasant way. Later, using Streamlit Cloud, we send it to a free server, which allows users to use it.Streamlit is a library that allows you to easily create web applications that deal with working with data.
+Finally, it further develops a practical graphical interface, which allows users to enter new data in a pleasant way. Later, using Streamlit Cloud, we send it to a free server, which allows users to use it,streamlit is a library that allows you to easily create web applications that deal with working with data.
 
 
 
