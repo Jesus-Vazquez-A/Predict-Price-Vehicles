@@ -75,7 +75,7 @@ Carry out a similar process for the price variable, with the difference that you
 
 
 
-<img src = "https://miro.medium.com/max/1200/0*T5jaa2othYfXZX9W" width = 700>
+<img src = "https://forum.huawei.com/enterprise/es/data/attachment/forum/202209/09/233924c426wl254hl4i4a8.png" width = 700>
 
 
 Nominal character variables, such as the model or the manufacturer, require a transformation called One Hot Encoding. Several dummy variables are created according to the number of these. Where the condition is met, a 1 will be assigned, while the other columns will be filled with a 0.
