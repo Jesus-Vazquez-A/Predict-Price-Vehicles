@@ -86,23 +86,9 @@ As a final model of the following combination of parameters:
 
 ### *Feature Importance*
 
+![plot_importance](https://user-images.githubusercontent.com/85312561/190239451-6b37359a-26c4-4814-9a88-db3659250169.jpeg)
 
 
-![plot_importance](https://user-images.githubusercontent.com/85312561/188053598-d9e75b84-7e25-4ce4-8929-8f80722e0c9b.jpeg)
-
-
-* If the vehicle has a Manual transmission, the price of the vehicle generally decreases, it is less expensive with an automatic or semi-automatic transmission.
-The engine size is a variable that has a lot of weight. Since the greater the capacity, the greater the technical capacity of the car.
-
-
-* The MPG in some countries is the main producer, for the purchase of a vehicle. Since there will be people looking for an economical car in terms of fuel consumption.
-
-
-* The year of manufacture includes in the price, since if a vehicle of the same model. It will make the price of the car more expensive, since it will be a more recent model.
-
-These are the variables that most influence the model. The other variables can help complement the result.
-
-For example, in this list of the most important variables, the mileage variable does not appear. It is well known that generally a vehicle with more mileage tends to lower the price.
 
 
 ## *Production*
