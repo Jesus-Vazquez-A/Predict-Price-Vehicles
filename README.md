@@ -106,15 +106,16 @@ In addition to preventing the model from overfitting training data.It has the ad
 
 ### *GridSearchCV*
 
-We rely on the GridSearchCV function that searches for the best combination of parameters according to cross validation. Thanks to this tool we ensure that the model generalizes well.
 
-As a final model of the following combination of parameters:
+I developed three beta models, just by modifying the depth of each tree and using a learning rate of 0.01 the last model generated very good performance.
 
-* max_depth = 7
-* learning_rate = 0.01
-* n_estimators = 1000
-* subsample = 0.85
-* gamma = 10
+
+However, it presents some overfitting, for which we will use regularization hyperparameters, we apply some parameters to reduce this effect.
+
+
+Finally, I chose to apply GridSearch, which consists of finding the best combination of parameters, for which it assigns a new sparmeter alpha_reg and explores if there is an improvement by adding more estimators.
+
+
 
 ### *Feature Importance*
 
