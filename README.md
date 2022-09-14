@@ -21,9 +21,13 @@ Develop a predictive model that allows estimating the price of brand vehicles: F
 
 ## *Important Discoveries*
 
-![mean_price](https://user-images.githubusercontent.com/85312561/187807320-c551598b-4eae-4f27-a781-66e90d4d13ed.png)
 
-As can be seen from brands such as Mercedes-Benz, Audi and BMW. They have a higher average price, since they are manufacturers of high-end vehicles.
+![mean_price](https://user-images.githubusercontent.com/85312561/190241034-31a3680e-5438-4796-8eea-ca22e077feaf.png)
+
+
+
+![mean_price_trasmission](https://user-images.githubusercontent.com/85312561/190241081-3abdc08c-d4e1-406d-a19c-4bbb53572ca3.png)
+
 
 
 ![matrix plot](https://user-images.githubusercontent.com/85312561/187807773-39d1df0b-e2a0-408f-b1f2-f186d695380e.png)
