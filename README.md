@@ -66,10 +66,9 @@ We opted to create several subsets according to the vehicle manufacturer with th
 ![mileage](https://user-images.githubusercontent.com/85312561/190246548-cd8f83fa-215b-4106-8943-48e3f46490a6.jpeg)
 
 
-We create a custom model that allows me to calculate confidence intervals, in order to remove outliers.
+I created a custom Python module that allows me to calculate confidence intervals, in order to remove outliers.
 
-We perform a similar process for the price variable, with the difference that it uses manufacturer-based intervals, since the dataset contains high-end car manufacturers.
-
+Carry out a similar process for the price variable, with the difference that you use the intervals based on the manufacturer, since the dataset contains high-end car manufacturers.
 
 
 ## *Data Processing*
