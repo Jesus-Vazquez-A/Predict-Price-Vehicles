@@ -86,7 +86,16 @@ Nominal character variables, such as the model or the manufacturer, require a tr
 As results we reach a number of 119 input variables. In addition to having around 86,000 observations. Which the best model that meets these characteristics is the XGBoost. Instead of using a neural network, since using it requires more data sets. XGBoost does not require any kind of scaling, since it applies mathematical inequalities on each estimator.
 
 
+### *Final Model*
 
+* mmax_depth = 10
+* n_estimators = 800
+* learning_rate = 0.01
+* colsample_bytree = 0.7
+* subsample = 0.7
+* colsample_bynode = 0.8
+* reg_alpha = 0.1
+* gamma = 20
 
 
 
