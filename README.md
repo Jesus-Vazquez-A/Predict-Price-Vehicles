@@ -74,16 +74,16 @@ Carry out a similar process for the price variable, with the difference that you
 ## *Data Processing*
 
 
+
+<img src = "https://miro.medium.com/max/1200/0*T5jaa2othYfXZX9W" width = 700>
+
+
 Nominal character variables, such as the model or the manufacturer, require a transformation called One Hot Encoding. Several dummy variables are created according to the number of these. Where the condition is met, a 1 will be assigned, while the other columns will be filled with a 0.
 
 
 
-![mileage](https://user-images.githubusercontent.com/85312561/190246021-4ebdef09-e1f8-4619-9e46-0437db01c303.jpeg)
 
-
-
-
-As results we reach a number of 119 input variables. In addition to having around 50,000 observations. Which the best model that meets these characteristics is the XGBoost. Instead of using a neural network, since using it requires more data sets. XGBoost does not require any kind of scaling, since it applies mathematical inequalities on each estimator.
+As results we reach a number of 119 input variables. In addition to having around 86,000 observations. Which the best model that meets these characteristics is the XGBoost. Instead of using a neural network, since using it requires more data sets. XGBoost does not require any kind of scaling, since it applies mathematical inequalities on each estimator.
 
 
 
