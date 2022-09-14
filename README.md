@@ -141,6 +141,10 @@ Finally, I chose to apply GridSearch, which consists of finding the best combina
 * gamma: Minimum loss reduction required to make a further partition on a leaf node of the tree. The larger gamma is, the more conservative the algorithm will be range.
 
 
+* n_estimators: Number of trees.
+
+
+* reg_alpha: L1 regularization term on weights. Increasing this value will make model more conservative.
 
 
 
