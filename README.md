@@ -85,10 +85,28 @@ Nominal character variables, such as the model or the manufacturer, require a tr
 
 As results we reach a number of 119 input variables. In addition to having around 86,000 observations. Which the best model that meets these characteristics is the XGBoost. Instead of using a neural network, since using it requires more data sets. XGBoost does not require any kind of scaling, since it applies mathematical inequalities on each estimator.
 
+## *XGBoost*
 
-### *Final Model*
+<img src = "https://miro.medium.com/max/560/1*85QHtH-49U7ozPpmA5cAaw.png">
 
-#### *Explanation of Parameters*
+
+It is an algorithm that uses other simpler models, generally decision trees. Each tree becomes better according to the proportion of the user's learning rate. A low learning rate allows the greatest use of estimators. 
+
+### *GridSearchCV*
+
+
+I developed three beta models, just by modifying the depth of each tree and using a learning rate of 0.01 the last model generated very good performance.
+
+
+However, it presents some overfitting, for which we will use regularization hyperparameters, we apply some parameters to reduce this effect.
+
+
+Finally, I chose to apply GridSearch, which consists of finding the best combination of parameters, for which it assigns a new sparmeter alpha_reg and explores if there is an improvement by adding more estimators.
+
+
+#### *Final Model*
+
+###### *Explanation of Parameters*
 
 * max_depth: Maximum depth of a tree. Increasing this value will make the model more complex and more likely to overfit.
 
@@ -106,7 +124,7 @@ As results we reach a number of 119 input variables. In addition to having aroun
 * colsample_bynode: colsample_bynode is the subsample ratio of columns for each node (split) subsampling occurs once every time a new split is evaluated. Columns are subsampled from the set of columns chosen for the current level.
 
 
-*gamma: Minimum loss reduction required to make a further partition on a leaf node of the tree. The larger gamma is, the more conservative the algorithm will be range.
+* gamma: Minimum loss reduction required to make a further partition on a leaf node of the tree. The larger gamma is, the more conservative the algorithm will be range.
 
 * mmax_depth = 10
 * n_estimators = 800
@@ -119,30 +137,7 @@ As results we reach a number of 119 input variables. In addition to having aroun
 
 
 
-## *XGBoost*
 
-<img src = "https://miro.medium.com/max/560/1*85QHtH-49U7ozPpmA5cAaw.png">
-
-
-It is an algorithm that uses other simpler models, generally decision trees. Each tree becomes better according to the proportion of the user's learning rate. A low learning rate allows the greatest use of estimators. 
-
-In addition to preventing the model from overfitting training data.It has the additional advantage that the model can be trained using a GPU, accelerating the training speed.
-
-
-
-
-
-
-### *GridSearchCV*
-
-
-I developed three beta models, just by modifying the depth of each tree and using a learning rate of 0.01 the last model generated very good performance.
-
-
-However, it presents some overfitting, for which we will use regularization hyperparameters, we apply some parameters to reduce this effect.
-
-
-Finally, I chose to apply GridSearch, which consists of finding the best combination of parameters, for which it assigns a new sparmeter alpha_reg and explores if there is an improvement by adding more estimators.
 
 
 
