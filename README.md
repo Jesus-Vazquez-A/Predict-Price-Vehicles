@@ -33,6 +33,20 @@ Develop a predictive model that allows estimating the price of brand vehicles: F
 ![matrix_plot](https://user-images.githubusercontent.com/85312561/190241480-67fb4ed6-3a3f-4be8-8750-0ef0ea77d182.png)
 
 
+### *Conclusion*
+
+The dataset has several outliers for example with the following variables:
+
+
+
+* Year: There is a value that has a manufacturing date that is equal to the year 2060. Something that is illogical, it was probably a registry error.
+
+
+* Mileage: There are vehicles that have a mile traveled, something that is very rare to happen. These observations probably made some modifications to the odometer so that this number of miles traveled would appear. Normally, pre-owned vehicles have at least 3,000 miles of travel with the vehicle as a minimum.
+
+
+
+* Those categories that contain a value that is equal to "Other" will have to be eliminated, since they do not add any value to the resolution of the problem.All those categories that present less than 10 times I will choose to eliminate them, since it does not make sense for the model to only learn very specific patterns, it can cause the algorithm to overfit
 
 ## Data cleaning
 
