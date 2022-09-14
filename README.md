@@ -173,12 +173,4 @@ Finally, it further develops a practical graphical interface, which allows users
 
 
 
-# *Summary*
 
-
-We develop all the processes that require a data science project. We clean the data in order to improve the performance of our model.
-
-We opted to use XGBoost as this algorithm works quite well for moderate data sets. In addition, continuous variables do not require any type of preprocessing and as if that were not enough, it allows training through GPU. This translates to much more efficient training than we would with a CPU.
-
-
-The created model is used to predict new values, to verify its performance. Since I was sure of its performance, I developed an application for the Artificial Intelligence model. With elin that users can enter data in a better way.
