@@ -88,6 +88,26 @@ As results we reach a number of 119 input variables. In addition to having aroun
 
 ### *Final Model*
 
+#### *Explanation of Parameters*
+
+* max_depth: Maximum depth of a tree. Increasing this value will make the model more complex and more likely to overfit.
+
+
+* learning_rate: Step size shrinkage used in update to prevents overfitting. After each boosting step, we can directly get the weights of new features, and eta shrinks the feature weights to make the boosting process more conservative.
+
+
+
+* subsample: Subsample ratio of the training instances.
+
+
+* colsample_bytree: colsample_bytree is the subsample ratio of columns when constructing each tree. Subsampling occurs once for every tree constructed.
+
+
+* colsample_bynode: colsample_bynode is the subsample ratio of columns for each node (split) subsampling occurs once every time a new split is evaluated. Columns are subsampled from the set of columns chosen for the current level.
+
+
+*gamma: Minimum loss reduction required to make a further partition on a leaf node of the tree. The larger gamma is, the more conservative the algorithm will be range.
+
 * mmax_depth = 10
 * n_estimators = 800
 * learning_rate = 0.01
