@@ -106,6 +106,20 @@ Finally, I chose to apply GridSearch, which consists of finding the best combina
 
 #### *Final Model*
 
+
+* max_depth = 10
+* n_estimators = 800
+* learning_rate = 0.01
+* colsample_bytree = 0.7
+* subsample = 0.7
+* colsample_bynode = 0.8
+* reg_alpha = 0.1
+* gamma = 20
+
+
+
+
+
 ###### *Explanation of Parameters*
 
 * max_depth: Maximum depth of a tree. Increasing this value will make the model more complex and more likely to overfit.
@@ -125,17 +139,6 @@ Finally, I chose to apply GridSearch, which consists of finding the best combina
 
 
 * gamma: Minimum loss reduction required to make a further partition on a leaf node of the tree. The larger gamma is, the more conservative the algorithm will be range.
-
-* mmax_depth = 10
-* n_estimators = 800
-* learning_rate = 0.01
-* colsample_bytree = 0.7
-* subsample = 0.7
-* colsample_bynode = 0.8
-* reg_alpha = 0.1
-* gamma = 20
-
-
 
 
 
