@@ -11,8 +11,7 @@ We collected 6 sets of data from the Kaggle platform on the price of pre-owned o
 * Year: Model year of manufacture.
 * Mileage : Number of miles traveled by the vehicle.
 * EngineSize: Car's Engine Size.
-* Tax: Amount of tax per vehicle.
-* MPG: Fuel cost miles per gallon.
+
 
 
 ## *What is the price of the vehicle?*
@@ -48,11 +47,6 @@ We opted to create several subsets according to the vehicle manufacturer with th
 
 
 
-![mpg](https://user-images.githubusercontent.com/85312561/187809290-6a363bdd-e9c4-41ed-98c0-5d7669950e30.png)
-
-
-We create an upper range for the MPG variable. To find a more exact interval. We decided to calculate it according to the fuel type of the vehicle.
-It makes sense that hybrid vehicles have an MPG. Since they rely on their electric motors.We take the largest interval to select all those values that are less than that amount.
 
 
 
@@ -77,22 +71,6 @@ In addition to preventing the model from overfitting training data.It has the ad
 
 
 
-#### *Common Parameters*
-* max_depth: Maximum depth of each tree.
-* n_estimators: Number of decision trees.
-* learning_rate: Room for improvement of each estimator.
-* subsample: Number of training samples. Instead of selecting 100% of the data, you can use 80 or 85% of the data. Preventing the model from overfitting the training data
-
-### *Number of Ideal Estimators*
-
-We use the mean square error, which measures the average error between the original value and the predicted one.
-
-We evaluate the MSE according to the number of estimators, taking care that the loss function does not only decrease for the training data.Each model proposal is assigned a learning rate of 0.01. In order for the model to generalize better.
-
-![estimators_plot](https://user-images.githubusercontent.com/85312561/187816326-687aa2ce-8adc-423b-a8c4-d3590b2be2b7.png)
-
-
-We use 100 to 1000 estimators to find the optimal number of trees. According to the maximum depth of the tree, in this way we ensure that the model does not overfit.
 
 ### *GridSearchCV*
 
