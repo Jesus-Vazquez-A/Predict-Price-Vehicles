@@ -72,6 +72,7 @@ In addition to preventing the model from overfitting training data.It has the ad
 
 
 
+
 ### *GridSearchCV*
 
 We rely on the GridSearchCV function that searches for the best combination of parameters according to cross validation. Thanks to this tool we ensure that the model generalizes well.
@@ -89,6 +90,18 @@ As a final model of the following combination of parameters:
 ![plot_importance](https://user-images.githubusercontent.com/85312561/190239451-6b37359a-26c4-4814-9a88-db3659250169.jpeg)
 
 
+
+* If the vehicle has a Manual transmission, the price of the vehicle generally decreases, it is less expensive with an automatic or semi-automatic transmission.
+The engine size is a variable that has a lot of weight. Since the greater the capacity, the greater the technical capacity of the car.
+
+
+
+* The year of manufacture includes in the price, since if a vehicle of the same model. It will make the price of the car more expensive, since it will be a more recent model.
+
+
+
+
+* Other variables that complement the predictions well is the vehicle brand, since for example it is well known that Mercedes-benz vehicles belong to high-end manufacturers, which means that the price per car is much higher. Also the number of miles traveled, since generally a vehicle with higher mileage has more wear, which causes a devaluation of the car.
 
 
 ## *Production*
