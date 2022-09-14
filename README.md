@@ -173,4 +173,17 @@ Finally, it further develops a practical graphical interface, which allows users
 
 
 
+## *Summary*
 
+
+
+Apply the data science problem solving methodology, it receives the database with outliers, for which I had to clean it, so that these values do not affect the model.
+
+Later I had to perform the One Hot Encoding transformation for those nominal variables, the resulting dataframe was 117 predictor variables.
+
+Apply the XGBoost model as it works quite well for datasets with many variables and a moderate amount of data instead of applying a neural network.
+
+Apply regularization parameters due to the huge amount of predictor variables, I finally used a tool that allows to search for the best combination of parameters based on cross validation.
+
+
+Finally save the model and create a web application using Streamlit, with the aim that the user enters data in a comfortable way
