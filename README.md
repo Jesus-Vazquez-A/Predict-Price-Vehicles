@@ -138,7 +138,7 @@ Finally, I chose to apply GridSearch, which consists of finding the best combina
 * colsample_bynode: colsample_bynode is the subsample ratio of columns for each node (split) subsampling occurs once every time a new split is evaluated. Columns are subsampled from the set of columns chosen for the current level.
 
 
-* gamma: Minimum loss reduction required to make a further partition on a leaf node of the tree. The larger gamma is, the more conservative the algorithm will be range.
+* gamma: Minimum loss reduction required to make a further partition on a leaf node of the tree. The larger gamma is, the more conservative the algorithm will be range. Gamma values around 20 are extremely high, and should be used only when you are using high depth.
 
 
 * n_estimators: Number of trees.
