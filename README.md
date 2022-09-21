@@ -113,7 +113,7 @@ Finally, I chose to apply GridSearch, which consists of finding the best combina
 * colsample_bytree = 0.7
 * subsample = 0.7
 * colsample_bynode = 0.8
-* reg_alpha = 0.1
+* reg_alpha = 0.5
 * gamma = 20
 
 
