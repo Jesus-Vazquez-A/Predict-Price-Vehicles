@@ -94,14 +94,7 @@ It is an algorithm that uses other simpler models, generally decision trees. Eac
 
 ### *GridSearchCV*
 
-
-I developed three beta models, just by modifying the depth of each tree and using a learning rate of 0.01 the last model generated very good performance.
-
-
-However, it presents some overfitting, for which we will use regularization hyperparameters, we apply some parameters to reduce this effect.
-
-
-Finally, I chose to apply GridSearch, which consists of finding the best combination of parameters, for which it assigns a new sparmeter alpha_reg and explores if there is an improvement by adding more estimators.
+Use GridSearchCV to find the best combination of hyperparameters based on cross-validation, which is a technique that involves doing several random subsamples to find the percentage of generalization.
 
 
 #### *Final Model*
@@ -117,34 +110,6 @@ Finally, I chose to apply GridSearch, which consists of finding the best combina
 * gamma = 20
 
 
-
-
-
-###### *Explanation of Parameters*
-
-* max_depth: Maximum depth of a tree. Increasing this value will make the model more complex and more likely to overfit.
-
-
-* learning_rate: Step size shrinkage used in update to prevents overfitting. After each boosting step, we can directly get the weights of new features, and eta shrinks the feature weights to make the boosting process more conservative.
-
-
-
-* subsample: Subsample ratio of the training instances.
-
-
-* colsample_bytree: colsample_bytree is the subsample ratio of columns when constructing each tree. Subsampling occurs once for every tree constructed.
-
-
-* colsample_bynode: colsample_bynode is the subsample ratio of columns for each node (split) subsampling occurs once every time a new split is evaluated. Columns are subsampled from the set of columns chosen for the current level.
-
-
-* gamma: Minimum loss reduction required to make a further partition on a leaf node of the tree. The larger gamma is, the more conservative the algorithm will be range. Gamma values around 20 are extremely high, and should be used only when you are using high depth.
-
-
-* n_estimators: Number of trees.
-
-
-* reg_alpha: L1 regularization term on weights. Increasing this value will make model more conservative.
 
 
 
